@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Вадим Смирнов](https://up.htmlacademy.ru/htmlcss/25/user/501373).
-* Наставник: [Алексей Новиков] (https://htmlacademy.ru/profile/id42641)
+* Наставник: [Алексей Новиков] (https://up.htmlacademy.ru/htmlcss/25/user/42641)
 
 ---
 
