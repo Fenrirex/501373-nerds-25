@@ -2,29 +2,77 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Нёрдс</title>
   </head>
   <body>
 <header class="main-header">
       <nav class="main-navigation">
       <a class="main-header-logi" href="index.html">
-      <img src="logo/Slice_1" width="338" height="90" alt="Логотип «Нёрдс»">
-    </a>
-      <nav class="main-navigation">
-    <ul class="site-navigation">
-      <li><a href="#info">Студия</a></li>
-      <li><a href="#clients">Клиенты</a></li>
-      <li class="site-navigation-current"><a href="#shop">Магазин</a></li>
-      <li><a href="#contacts">Контакты</a></li>
-      <li><a href="#basket">Корзина</a></li>
+      <img src="logo/Slice_1.png" width="338" height="90" alt="Логотип дизайн-студии
+«Нёрдс»"></a>
+      <ul class="site-navigation">
+      <li><a href="info.html">Студия</a></li>
+      <li><a href="clients.html">Клиенты</a></li>
+      <li class="site-navigation-current"><a href="shop.html">Магазин</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="basket.html">Корзина</a></li>
     </ul>
-    </nav>
-</header>
+  </header>
   <main class="container">
     <h1 class="page-title">Магазин готовых шаблонов</h1>
 <section class="filters">
   <h2 class="visually-hidden">Фильтр товаров</h2>
-<!--здесь будет форма-->
+<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+<fiedset>
+<legend>Сетка:</legend>
+<ul>
+    <li class="filter-option">
+    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Сетка" value="Адаптивная" id="filter-Адаптивная" checked>
+    <label for="filter-Адаптивная">Адаптивная</label>
+  </li>
+    <li class="filter-option">
+    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Сетка" value="Фиксированная" id="filter-Фиксированная">
+    <label for="filter-Фиксированная">Фиксированная</label>
+  </li>
+    <li class="filter-option">
+    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Сетка" value="Резиновая" id="filter-Резиновая">
+    <label for="filter-Резиновая">Резиновая</label>
+  </li>
+</ul>
+</fieldset>
+<fiedset>
+  <legend>Особенности:</legend>
+<ul>
+  <li class="filter-option">
+    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Слайдер" id="Слайдер" checked>
+    <label for="filter-Резиновая">Слайдер</label>
+    Слайдер
+  </li>
+    <li class="filter-option">
+      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Блок преимуществ" id="Блок преимуществ">
+      <label for="filter-Блок преимуществ">Блок преимуществ</label>
+      Блок преимуществ
+    </li>
+      <li class="filter-option">
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Новости" id="Новости" checked>
+        <label for="filter-Новости">Новости</label>
+        Новости
+      </li>
+        <li class="filter-option">
+          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Галерея" id="Галерея">
+          <label for="filter-Галерея">Галерея</label>
+          Галерея
+        </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Корзина" id="Корзина">
+            <label for="filter-Корзина">Корзина</label>
+            Корзина
+          </li>
+        </ul>
+</fieldset>
+<button type="submit" class="filter-button button">
+  Показать
+</button>
 </section>
 
 <section class="catalog">
@@ -37,7 +85,7 @@
         </a>
   </h3>
        <a href="catalog-item.html">
-        <img src="img/Slice_13.jpg" width="250" height="430" alt="Sedona">
+        <img src="img/Slice_13.png" width="250" height="430" alt="Sedona">
        </a>
   <h3>
       <a href="catalog-item.html">
@@ -45,7 +93,7 @@
         </a>
   </h3>
                 <a href="catalog-item.html">
-                   <img src="img/Slice_14.jpg" width="250" height="430" alt="Sedona">
+                   <img src="img/Slice_14.png" width="250" height="430" alt="Sedona">
                 </a>
  <h3>
       <a href="catalog-item.html">
@@ -53,7 +101,7 @@
         </a>
   </h3>
                 <a href="catalog-item.html">
-                  <img src="img/Slice_15.jpg" width="250" height="430" alt="Sedona">
+                  <img src="img/Slice_15.png" width="250" height="430" alt="Sedona">
                 </a>
   <h3>
       <a href="catalog-item.html">
@@ -61,7 +109,7 @@
         </a>
   </h3>
                 <a href="catalog-item.html">
-                      <img src="img/Slice_16.jpg" width="250" height="430" alt="Sedona">
+                      <img src="img/Slice_16.png" width="250" height="430" alt="Sedona">
                 </a>
  <h3>
       <a href="catalog-item.html">
@@ -69,7 +117,7 @@
         </a>
   </h3>
                 <a href="catalog-item.html">
-                          <img src="img/Slice_17.jpg" width="250" height="430" alt="Sedona">
+                          <img src="img/Slice_17.png" width="250" height="430" alt="Sedona">
                 </a>
   <h3>
       <a href="catalog-item.html">
@@ -77,18 +125,46 @@
         </a>
   </h3>
                 <a href="catalog-item.html">
-                      <img src="img/Slice_18.jpg" width="250" height="430" alt="Sedona">
+                      <img src="img/Slice_18.png" width="250" height="430" alt="Sedona">
                 </a>
       </section>
   </li>
 </ul>
-<!--здесь будут кнопки перехода страниц-->
+<h1>Напишите нам</h1>
+    <form class="user" method="post"
+          action="https://echo.htmlacademy.ru">
+      <p>
+        <label for="user-name">Ваше имя:</label>
+        <input id="user-name" type="text"
+               name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-email">Ваш e-mail:</label>
+        <input id="user-email" type="email"
+               name="email" placeholder="email@yandex.ru">
+           </p>
+      <p>
+        <label for="text-email">Текст письма:</label>
+        <input id="user-text-email" type="text-email"
+               name="text-email" placeholder="В свободной форме">
+          </label>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+<!--visually-hidden  Как до нас добраться-->
+<main class="container">
+<section class="modal modal-map">
+  <h2 class="visually-hidden">
+    Как до нас добраться</h2>
+    <p>
+      <img src="img/map.png" width="780" height="560" alt="Где то там">
+    </p>
   </body>
-  <footer class="main-footer">
+    <footer class="main-footer">
       <ul class="footer-contacts">
-      <li><a class="social-botton" href="#"><src="img/Slice_12.jpg" width="108" height="35">Вконтакте</a></li>
-      <li><a class="social-botton" href="#"><src="img/Slice_11.jpg" width="108" height="35">Фейсбук</a></li>
-      <li><a class="social-botton" href="#"><src="img/Slice_9.jpg" width="108" height="35">Инстаграм</a></li>
+        <li><a class="social-button" href="#"><img src="img/Slice_12.png" width="108" height="35">Вконтакте</a></li>
+        <li><a class="social-button" href="#"><img src="img/Slice_11.png" width="108" height="35">Фейсбук</a></li>
+        <li><a class="social-button" href="#"><img src="img/Slice_9.png" width="108" height="35">Инстаграм</a></li>
     </ul>
     <h3>Давайте дружить, это выгодно!</h3>
     <b>Скидка 10% для друзей из социальных сетей</b>
