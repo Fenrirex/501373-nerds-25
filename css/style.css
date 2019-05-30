@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family:"PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: black;
+  text-transform: None;
+  background-color: #eeeeee;
+}
+.page-title{
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  }
+a {
+   text-transform: uppercase;
+   text-decoration: none;
+   color: black;
+   font-weight: 700;
+}
+.site-navigation {
+   list-style: none;
+}
+.site-navigation a{
+    color: black;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    text-decoration: underline;
+  }
+.site-navigation-current {
+    color: red;
+}
+.catalog-list {
+    list-style: none;
+    text-align: center;
+    background-color:  white;
+  }
+.catalog-list h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+  }
+.page-title {
+    background-color:  #eeeeee;
+}
+.filters {
+    background-color:  white;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+  .filter fieldset {
+    border: none;
+  }
+
+.filter-option {
+
+    font-weight: 400;
+    list-style: none;
+    text-transform: none;
+    background-color: white;
+}
+.catalog {
+  background-color: white;
+}
+.filter-button {
+  display: block;
+      font-size: 16px;
+      line-height: 20px;
+      color: black;
+      background-color: #eeeeee;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 3px;
+      font-weight: 500;
+}
+.filter ul {
+  line-height: 10px;
+
+}
+/*.index-colums {
+    background-color: white;
+}
+/*.appointment-item input{
+font: inherit;
+
+background-color: transparent;
+border: 2px solid #eeeeee;
+}*/
+.modal {
+        background-color: white;
+}
+.main-footer {
+        background-color: white;
+}
+.main-footer ul{
+        list-style: none;
+}
+.social {
+        text-align: center;
+        font-size: 30px;
+        line-height: 42px;
+}
+.footer-social {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight:400;
+}

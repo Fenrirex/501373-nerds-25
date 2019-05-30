@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
           <nav class="main-navigation">
           <a class="main-header-logo" href="index.html">
-          <img src="logo/Slice_1.png" width="338" height="90" alt="Логотип дизайн-студии
- «Нёрдс»"></a>
+          <img src="img/Slice_1.png" width="338" height="90" alt="Логотип дизайн-студии «Нёрдс»"></a>
         <ul class="site-navigation">
           <li><a href="info.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
@@ -17,6 +19,7 @@
           <li><a href="contacts.html">Контакты</a></li>
           <li><a href="basket.html">Корзина</a></li>
         </ul>
+      </nav>
    </header>
 <main>
     <section class="catalog">
@@ -30,8 +33,9 @@
             <a href="catalog-item.html"></a>
             </li>
             <li>
-              <img src="img/Slice_6.png" width="208" height="99">
-           <a class="button" href="#"><img src="img/Slice_8.png" width="108" height="35">Заказать</a>
+              <img src="img/Slice_6.png" width="210" height="100">
+           <a class="button" href="#"><img src="img/Slice_8.png" width="110" height="35">
+           </a>
          </li>
           <li class="catalog-item">
            <h3>Приложения</h3>
@@ -41,8 +45,9 @@
             <a href="catalog-item.html"></a>
           </li>
           <li>
-              <img src="img/Slice_4.png" width="208" height="99">
-          <a class="button" href="#"><img src="img/Slice_3.png" width="108" height="35">Заказать</a>
+              <img src="img/Slice_4.png" width="210" height="100">
+          <a class="button" href="#"><img src="img/Slice_3.png" width="110" height="35">
+          </a>
         </li>
            <li class="catalog-item">
            <h3>Презентации</h3>
@@ -52,51 +57,49 @@
             <a href="catalog-item.html"></a>
             </li>
               <li>
-              <img src="img/Slice_2.png" width="208" height="99">
-          <a class="button" href="#"><img src="img/Slice_5.png" width="108" height="35">Заказать</a>
+              <img src="img/Slice_2.png" width="210" height="100">
+        <a class="button" href="#"><img src="img/Slice_5.png" width="110" height="35">
+        </a>
 </li>
 </ul>
-<h1>Напишите нам</h1>
-    <form class="user" method="post"
-          action="https://echo.htmlacademy.ru">
+<div class="index-colums">
+  <setion>
+  <h2>Напишите нам</h2>
+    <form class="user" method="post" action="https://echo.htmlacademy.ru">
       <p>
         <label for="user-name">Ваше имя:</label>
-        <input id="user-name" type="text"
-               name="name" placeholder="Имя Фамилия">
+        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p>
         <label for="user-email">Ваш e-mail:</label>
-        <input id="user-email" type="email"
-               name="email" placeholder="email@yandex.ru">
-           </p>
+        <input id="user-email" type="email" name="email" placeholder="email@yandex.ru">
+      </p>
       <p>
         <label for="text-email">Текст письма:</label>
-        <input id="user-text-email" type="text-email"
-               name="text-email" placeholder="В свободной форме">
-          </label>
+        <input id="user-text-email" type="text-email" name="text-email" placeholder="В свободной форме"></label>
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
-    <!--visually-hidden  Как до нас добраться-->
+  </section>
+</div>
 <main class="container">
-    <section class="modal modal-map">
-      <h2 class="visually-hidden">
-        Как до нас добраться</h2>
-        <p>
-          <img src="img/map.png" width="780" height="560" alt="Где то там">
-        </p>
-
-         </main>
-
+      <section class="modal modal-map">
+         <h2 class="visually-hidden">Как до нас добраться</h2>
+         <p>
+         <img src="img/map.png" width="780" height="560" alt="Где то там">
+      </p>
+</main>
 <footer class="main-footer">
-  <ul class="footer-contacts">
-    <li><a class="social-button" href="#"><img src="img/Slice_12.png" width="108" height="35">Вконтакте</a></li>
-    <li><a class="social-button" href="#"><img src="img/Slice_11.png" width="108" height="35">Фейсбук</a></li>
-    <li><a class="social-button" href="#"><img src="img/Slice_9.png" width="108" height="35">Инстаграм</a></li>
-  </ul>
-  <h3>Давайте дружить, это выгодно!</h3>
-  <b>Скидка 10% для друзей из социальных сетей</b>
-</p>
+      <ul class="footer-contacts">
+         <li><a class="social-button" href="#"><img src="img/Slice_12.png" width="50" height="50">Вконтакте</a></li>
+         <li><a class="social-button" href="#"><img src="img/Slice_11.png" width="50" height="50">Фейсбук</a></li>
+         <li><a class="social-button" href="#"><img src="img/Slice_9.png" width="50" height="50">Инстаграм</a></li>
+      </ul>
+         <h3 class="social">Давайте дружить, это выгодно!
+      </h3>
+         <p class="footer-social">
+         <b>Скидка 10% для друзей из социальных сетей</b>
+      </p>
 </footer>
   </body>
 </html>

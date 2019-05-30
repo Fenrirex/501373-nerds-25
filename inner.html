@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet"> <!--подключен? -->
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+
+  <body class="inner-page">
+
 <header class="main-header">
       <nav class="main-navigation">
       <a class="main-header-logi" href="index.html">
-      <img src="logo/Slice_1.png" width="338" height="90" alt="Логотип дизайн-студии
-«Нёрдс»"></a>
+      <img src="img/Slice_1.png" width="338" height="90" alt="Логотип дизайн-студии «Нёрдс»"></a>
       <ul class="site-navigation">
       <li><a href="info.html">Студия</a></li>
       <li><a href="clients.html">Клиенты</a></li>
@@ -23,7 +27,7 @@
 <section class="filters">
   <h2 class="visually-hidden">Фильтр товаров</h2>
 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-<fiedset>
+<fieldset>
 <legend>Сетка:</legend>
 <ul>
     <li class="filter-option">
@@ -40,33 +44,33 @@
   </li>
 </ul>
 </fieldset>
-<fiedset>
+<fiedlset>
   <legend>Особенности:</legend>
 <ul>
   <li class="filter-option">
     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Слайдер" id="Слайдер" checked>
     <label for="filter-Резиновая">Слайдер</label>
-    Слайдер
+
   </li>
     <li class="filter-option">
       <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Блок преимуществ" id="Блок преимуществ">
       <label for="filter-Блок преимуществ">Блок преимуществ</label>
-      Блок преимуществ
+
     </li>
       <li class="filter-option">
         <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Новости" id="Новости" checked>
         <label for="filter-Новости">Новости</label>
-        Новости
+
       </li>
         <li class="filter-option">
           <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Галерея" id="Галерея">
           <label for="filter-Галерея">Галерея</label>
-          Галерея
+
         </li>
           <li class="filter-option">
             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Корзина" id="Корзина">
             <label for="filter-Корзина">Корзина</label>
-            Корзина
+
           </li>
         </ul>
 </fieldset>
@@ -130,27 +134,27 @@
       </section>
   </li>
 </ul>
-<h1>Напишите нам</h1>
-    <form class="user" method="post"
-          action="https://echo.htmlacademy.ru">
+<div class="index-colums">
+  <setion>
+  <h2>Напишите нам</h2>
+    <form class="user" method="post" action="https://echo.htmlacademy.ru">
       <p>
         <label for="user-name">Ваше имя:</label>
-        <input id="user-name" type="text"
-               name="name" placeholder="Имя Фамилия">
+        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p>
         <label for="user-email">Ваш e-mail:</label>
-        <input id="user-email" type="email"
-               name="email" placeholder="email@yandex.ru">
-           </p>
+        <input id="user-email" type="email" name="email" placeholder="email@yandex.ru">
+      </p>
       <p>
         <label for="text-email">Текст письма:</label>
-        <input id="user-text-email" type="text-email"
-               name="text-email" placeholder="В свободной форме">
-          </label>
+        <input id="user-text-email" type="text-email" name="text-email" placeholder="В свободной форме"></label>
       </p>
-      <button type="submit">Отправить</button>
+      <button class="button" type="submit">Отправить</button>
     </form>
+  </section>
+</div>
+
 <!--visually-hidden  Как до нас добраться-->
 <main class="container">
 <section class="modal modal-map">
@@ -160,15 +164,17 @@
       <img src="img/map.png" width="780" height="560" alt="Где то там">
     </p>
   </body>
-    <footer class="main-footer">
-      <ul class="footer-contacts">
-        <li><a class="social-button" href="#"><img src="img/Slice_12.png" width="108" height="35">Вконтакте</a></li>
-        <li><a class="social-button" href="#"><img src="img/Slice_11.png" width="108" height="35">Фейсбук</a></li>
-        <li><a class="social-button" href="#"><img src="img/Slice_9.png" width="108" height="35">Инстаграм</a></li>
-    </ul>
-    <h3>Давайте дружить, это выгодно!</h3>
-    <b>Скидка 10% для друзей из социальных сетей</b>
-  </p>
+  <footer class="main-footer">
+        <ul class="footer-contacts">
+           <li><a class="social-button" href="#"><img src="img/Slice_12.png" width="50" height="50">Вконтакте</a></li>
+           <li><a class="social-button" href="#"><img src="img/Slice_11.png" width="50" height="50">Фейсбук</a></li>
+           <li><a class="social-button" href="#"><img src="img/Slice_9.png" width="50" height="50">Инстаграм</a></li>
+        </ul>
+           <h3 class="social">Давайте дружить, это выгодно!
+        </h3>
+           <p class="footer-social">
+           <b>Скидка 10% для друзей из социальных сетей</b>
+        </p>
   </footer>
     </body>
   </html>
