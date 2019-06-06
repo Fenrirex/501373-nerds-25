@@ -4,30 +4,30 @@
     <meta charset="utf-8">
      <title>Нёрдс</title>
       <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
-      <link href="css/normalize.css" rel="stylesheet"> <!--подключен? -->
+      <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body class="inner-page">
 
    <header class="main-header">
+         <a class="header-logo" href="index.html">
+         <img src="img/Slice_1.png" width="115" height="48" alt="Логотип дизайн-студии «Нёрдс»"></a>
     <nav class="main-navigation">
-         <a class="main-header-logi" href="index.html">
-          <img src="img/Slice_1.png" width="338" height="90" alt="Логотип дизайн-студии «Нёрдс»"></a>
       <ul class="site-navigation">
          <li><a href="info.html">Студия</a></li>
          <li><a href="clients.html">Клиенты</a></li>
          <li class="site-navigation-current"><a href="shop.html">Магазин</a></li>
          <li><a href="contacts.html">Контакты</a></li>
-         <li><a href="basket.html">Корзина</a></li>
       </ul>
     </nav>
+    <a class="icon-basket" href="basket.html">Корзина</a>
    </header>
 
 <main>
 
          <h1 class="page-title">Магазин готовых шаблонов</h1>
-<section class="filters">
+         <section class="filters">
          <h2 hidden="true">Фильтр товаров</h2>
          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
@@ -81,8 +81,8 @@
 
 <section class="catalog">
       <h2 hidden="true">Магазин</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item">
+        <ul class="catalog-menu">
+          <li class="catalog-slide">
             <h3>
                  <a href="catalog-item.html">
                  <span class="catalog-category">Sedona</span>
@@ -165,7 +165,8 @@
                  <img src="img/map.png" width="780" height="560" alt="Где то там">
             </p>-->
 
-<footer class="main-footer">
+<footer class="services">
+    <div class="main-footer">
     <ul class="footer-contacts">
            <li><a class="social-button" href="#"><img src="img/Slice_12.png" width="50" height="50">Вконтакте</a></li>
            <li><a class="social-button" href="#"><img src="img/Slice_11.png" width="50" height="50">Фейсбук</a></li>
@@ -175,6 +176,7 @@
            <p class="footer-social">
            <b>Скидка 10% для друзей из социальных сетей</b>
            </p>
+    </div>
 </footer>
 </body>
 </html>

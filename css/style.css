@@ -3,12 +3,96 @@ body {
     padding: 0;
 
     font-family:"PT Sans Narrow", Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 300;
     color: black;
-    text-transform: None;
+    text-transform: none;
     background-color: #eeeeee;
+}
+/* Шапка родитель */
+.main-header {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin: 0 auto ;
+
+}
+/* Логотип*/
+.header-logo {
+    padding: 34px 98px 10px;
+}
+/* крзина*/
+.icon-basket {
+    width: 182px;
+    padding: 58px 24px;
+    margin: 0 auto;
+
+}
+/* Блок навигации*/
+.main-header ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: auto;
+    padding: 0 10px;
+    margin: 0;
+    border: none;
+    list-style: none;
+
+}
+/* отступы для меню*/
+.main-header li {
+    display: flex;
+    justify-content: center;
+    padding: 58px 20px 24px;
+    margin: 0;
+}
+.services {
+    background: #fff;
+}
+.layout-center-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: auto;
+    margin: 0 auto;
+
+}
+
+/* Разметка внутри контейнера*/
+.catalog-list {
+    display: flex;
+    width:  1000px;
+
+    justify-content: space-between;
+    list-style: none;
+    text-align: left;
+    background-color:  white;
+    padding: 0 0 58px;
+    margin: 98px;
+}
+/* обьекты в контейнере*/
+.catalog-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 210px;
+    margin-right: 70px;
+
+
+}
+/* Шрифты для предложений*/
+.catalog-item h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+}
+.catalog-list h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
 }
 .page-title {
     text-align: center;
@@ -20,9 +104,6 @@ a {
     text-decoration: none;
     color: black;
     font-weight: 700;
-}
-.site-navigation {
-    list-style: none;
 }
 .site-navigation a {
     color: black;
@@ -36,19 +117,18 @@ a {
 .site-navigation-current {
     color: red;
 }
-.catalog-list {
-    list-style: none;
-    text-align: center;
-    background-color:  white;
-}
-.catalog-list h3 {
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 42px;
-    font-weight: 700;
-}
 .page-title {
     background-color:  #eeeeee;
+}
+.main {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+.filter-menu {
+    display: flex;
+    width: 1000px;
+
 }
 .filters {
     background-color:  white;
@@ -57,7 +137,7 @@ a {
     line-height: 20px;
     font-weight: 700;
 }
-  .filter fieldset {
+.filter fieldset {
     border: none;
 }
 .filter-option {
@@ -69,6 +149,16 @@ a {
 .catalog {
     background-color: white;
 }
+
+.section {
+  width: 1000px;
+  height: 352px;
+  margin: 0 auto;
+}
+.section {
+  background-color: white;
+}
+
 .filter-button {
     display: block;
     font-size: 16px;
@@ -83,32 +173,47 @@ a {
 .filter ul {
     line-height: 10px;
 }
-.index-colums {
-    background-color: white;
-}
-/*.appointment-item input{
-    font: inherit;
+.catalog-menu {
+    display: flex;
+    width: 723px;
 
-    background-color: transparent;
-    border: 2px solid #eeeeee;
-}*/
-.modal {
-    background-color: white;
 }
+.catalog-slide {
+  display: flex;
+  width: 723px;
+  flex-wrap: wrap;
+}
+/* Подвал*/
 .main-footer {
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
+    width: 1000px;
+    margin: 0 auto;
 }
 .main-footer ul {
+    display: flex;
+    width: auto;
     list-style: none;
+    flex-wrap: nowrap;
+
 }
 .social {
-    text-align: center;
+    display: flex;
+    width: auto;
+    margin: 0 auto;
+
+
     font-size: 30px;
     line-height: 42px;
 }
+.
 .footer-social {
-    text-align: center;
+    display: flex;
+    width: auto;
+
+    margin: 0 auto;
     font-size: 16px;
     line-height: 20px;
-    font-weight:400;
+    font-weight: 400;
 }
