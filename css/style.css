@@ -98,6 +98,16 @@ body {
 .filter-grid, .filter-features {
   margin-bottom: 57px;
 }
+.main {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+.filter-menu {
+    display: flex;
+    width: 1000px;
+
+}
 .filters {
   display: flex;
   flex-wrap: wrap;
