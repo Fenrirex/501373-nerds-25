@@ -159,26 +159,33 @@
         </div>
 </footer>
 
-<section class="modal">
+<div class="modal">
+
+    <div class="modal-wrp">
+
+        <button class="modal-close" type="button">Закрыть</button>
+
         <span class="modal-title">Напишите нам!</span>
+
         <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
 
-         <label class="modal-text" for="name">Ваше имя:</label>
-         <input class="modal-input modal-input-name" id="name" type="text" name="name" placeholder="Имя Фамилия">
-
-         <label class="modal-text" for="email">Ваш e-mail:</label>
+         <label class="modal-text" for="name">Ваше имя:
+         <input class="modal-input modal-input-name" id="name" type="text" autofocus name="name" placeholder="Имя Фамилия">
+         </label>
+         <label class="modal-text" for="email">Ваш e-mail:
          <input class="modal-input modal-input-mail" id="email" type="email" name="email" placeholder="email@yandex.ru">
-
-         <p class="modal-text" for="comment">Текст письма
+         </label>
+         <p class="modal-text modal-text-comment">Текст письма
          <textarea class="modal-comment" id="comment-field"  name="comment" rows="4" placeholder="В свободной форме"></textarea></p>
 
 
-         <button class="button" type="submit">Отправить</button>
+         <button class="btn" type="submit">Отправить</button>
         </form>
+     </div>
+</div>
+  
 
-    <button class="modal-close" type="button">Закрыть</button>
 
-</section>
 
 <script>
   var link = document.querySelector(".button-address");

@@ -72,6 +72,7 @@ body {
 .menu-basket {
   position: relative;
   padding-left: 40px;
+
 }
 
 .menu-basket::after {
@@ -81,7 +82,7 @@ body {
   height: 15px;
   bottom: 7px;
   left: 0;
-  background: url("../img/Slise_7.png");
+
 }
 
 /*Меню 2ой страницы*/
@@ -439,8 +440,9 @@ background-position: 100% 28px;
   padding: 0 50px 0 0;
 }
 .catalog-item h3 {
-text-transform: uppercase;
-}/*Конец предложений*/
+ text-transform: uppercase;
+}
+
 
 /*Кнопка для модального окна*/
 .address {
@@ -496,6 +498,20 @@ text-transform: uppercase;
 /*Модальное окно*/
 
 
+
+.modal-form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.modal-wrp {
+  padding-top: 70px;
+  padding-bottom: 84px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
 .modal-login {
   top: 120px;
   left: 50%;
@@ -504,13 +520,7 @@ text-transform: uppercase;
   margin: 0 auto;
   padding: 50px 80px;
 }
-.modal-form {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  margin-top: 30px;
-}
+
 .modal {
   position: fixed;
   z-index: 100;
@@ -527,6 +537,24 @@ text-transform: uppercase;
   box-shadow: -1px 12px 19px -5px #000;
   display: none;
 }
+.modal-close {
+  position: absolute;
+  font-size: 0;
+  top: 80px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  border: 0;
+  background: none;
+  background-image: url("../img/Slide_7.png");
+  background-color: red;
+  opacity: .3;
+}
+
+
+
+
 
 .modal-show
 {
@@ -567,7 +595,8 @@ text-transform: uppercase;
 }
 
 .modal-text {
-
+  display: inline-block;
+  width: 360px;
 }
 
 .modal-text-comment {
@@ -592,20 +621,6 @@ text-transform: uppercase;
   outline: none;
 }
 
-.modal-close {
-  position: absolute;
-  font-size: 0;
-  top: 80px;
-  right: 90px;
-  width: 21px;
-  height: 21px;
-  cursor: pointer;
-  border: 0;
-  background: none;
-  background-image: url("../img/close-cross.png");
-  background-color: red;
-  opacity: .3;
-}
 
 .modal-close:hover {
   opacity: 1;
