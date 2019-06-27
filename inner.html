@@ -1,215 +1,224 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="utf-8">
-     <title>Нёрдс.Каталог</title>
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic">
-     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-     <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="utf-8">
+  <title>Нёрдс.Каталог</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 
-<header class="header">
+  <header class="header">
+    <div class="container">
+      <div class="menu">
+        <div class="menu-logo">
+          <img src="img/Slice_1.png" width="160" height="65" alt="Логотип">
+        </div>
+        <nav class="menu-nav">
+          <ul class="menu-list">
+            <li class="menu-item"><a href="index.html">Студия</a></li>
+            <li class="menu-item"><a href="#">Клиенты</a></li>
+            <li class="menu-item menu-item-active"><a href="">Магазин</a></li>
+            <li class="menu-item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <div class="container">
+        <div class="menu-user">
+          <a class="menu-basket" href="#">Корзина</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-        <div class="menu">
+  <main class="main">
 
-          <div class="menu-logo">
-               <img src="img/Slice_1.png" width="160" height="65" alt="Логотип">
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
+
+    <div class="filters">
+
+      <div class="filter-conteiner">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+
+        <form action="form.php" method="GET" class="filter">
+          <span class="filter-title filter-title--price">Стоимость:</span>
+          <div class="filter-range">
+            <div class="filter-scale">
+              <div class="filter-bar"></div>
+            </div>
+            <div class="filter-toggle filter-toggle--min"></div>
+            <div class="filter-toggle filter-toggle--max"></div>
           </div>
-               <nav class="menu-nav">
-                    <ul class="menu-list">
-                        <li class="menu-item"><a href="index.html">Студия</a></li>
-                        <li class="menu-item"><a href="#">Клиенты</a></li>
-                        <li class="menu-item menu-item-active"><a href="">Магазин</a></li>
-                        <li class="menu-item"><a href="#">Контакты</a></li>
-                    </ul>
-               </nav>
+          <div class="filter-price">
+            <label class="filter-value filter-value--min-price">от <input class="filter-value-input" name="min-price" type="text" value="0"></label>
+            <label class="filter-value filter-value--max-price">до <input class="filter-value-input" name="max-price" type="text" value="15000"></label>
+          </div>
+          <div class="filter-grid">
+            <span class="filter-title">Сетка</span>
+            <div class="filter-left">
+              <input type="radio" class="filter-radio" name="grid" id="adaptive" value="adaptive">
+              <label class="filter-label filter-label-radio" for="adaptive">Адаптивная</label>
+            </div>
+            <div class="filter-left">
+              <input type="radio" class="filter-radio" name="grid" id="fluid" value="fluid" checked>
+              <label class="filter-label filter-label-radio" for="fluid">Резиновая</label>
+            </div>
+            <div class="filter-left">
+              <input type="radio" class="filter-radio" name="grid" id="fix" value="fix">
+              <label class="filter-label filter-label-radio" for="fix">Фиксированная</label>
+            </div>
+          </div>
 
-<div class="menu-user">
-        <a class="menu-basket" href="#">Корзина</a>
-</div>
+          <div class="filter-features">
+            <span class="filter-title">Особенности:</span>
+            <div class="filter-left">
+              <input type="checkbox" class="filter-check" name="slider" id="slider" checked>
+              <label class="filter-label filter-label-check" for="slider">Слайдер</label>
+            </div>
+            <div class="filter-left">
+              <input type="checkbox" class="filter-check" name="advantage" id="advantage">
+              <label class="filter-label filter-label-check" for="advantage">Блок преимуществ</label>
+            </div>
+            <div class="filter-left">
+              <input type="checkbox" class="filter-check" name="news" id="news" checked>
+              <label class="filter-label filter-label-check" for="news">Новости</label>
+            </div>
+            <div class="filter-left">
+              <input type="checkbox" class="filter-check" name="gallery" id="gallery">
+              <label class="filter-label filter-label-check" for="gallery">Галерея</label>
+            </div>
+            <div class="filter-left">
+              <input type="checkbox" class="filter-check" name="basket" id="basket">
+              <label class="filter-label filter-label-check" for="basket">Корзина</label>
+            </div>
+            <button class="filter-button" type="submit">Показать</button>
+          </div>
+        </form>
+      </div>
+      <div class="catalog">
+        <div class="catalog-filter">
+          <ul class="catalog-sort"><span class="catalog-sort-title">Сортировать:</span>
+            <li class="catalog-sort-item catalog-sort-item--active"><a href="">По цене</a></li>
+            <li class="catalog-sort-item"><a href="#">По типу</a></li>
+            <li class="catalog-sort-item"><a href="#">По названию</a></li>
+          </ul>
+          <div class="catalog-toggle-list">
+            <div class="catalog-toggle catalog-toggle--down"></div>
+            <div class="catalog-toggle catalog-toggle--up"></div>
           </div>
         </div>
-</header>
-
-<main class="main">
-
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
-
-<section class="filters">
-
-<div class="filter-conteiner">
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-
-
-<div class="filter-grid">
-    <span class="filter-title">Сетка</span>
-    <div class="filter-left">
-          <input type="radio" class="filter-radio" name="grid" id="adaptive" value="adaptive">
-          <label class="filter-label filter-label-radio" for="adaptive">Адаптивная</label>
-    </div>
-    <div class="filter-left">
-          <input type="radio" class="filter-radio" name="grid" id="fluid" value="fluid" checked>
-          <label class="filter-label filter-label-radio" for="fluid">Резиновая</label>
-    </div>
-    <div class="filter-left">
-          <input type="radio" class="filter-radio" name="grid" id="fix" value="fix">
-          <label class="filter-label filter-label-radio" for="fix">Фиксированная</label>
-    </div>
-</div>
-
-<div class="filter-features">
-    <span class="filter-title">Особенности:</span>
-    <div class="filter-left">
-          <input type="checkbox" class="filter-check" name="slider" id="slider" checked>
-          <label class="filter-label filter-label-check" for="slider">Слайдер</label>
-    </div>
-    <div class="filter-left">
-          <input type="checkbox" class="filter-check" name="advantage" id="advantage">
-          <label class="filter-label filter-label-check" for="advantage">Блок преимуществ</label>
-    </div>
-    <div class="filter-left">
-          <input type="checkbox" class="filter-check" name="news" id="news" checked>
-          <label class="filter-label filter-label-check" for="news">Новости</label>
-    </div>
-    <div class="filter-left">
-          <input type="checkbox" class="filter-check" name="gallery" id="gallery">
-          <label class="filter-label filter-label-check" for="gallery">Галерея</label>
-    </div>
-    <div class="filter-left">
-          <input type="checkbox" class="filter-check" name="basket" id="basket">
-          <label class="filter-label filter-label-check" for="basket">Корзина</label>
-    </div>
-          <button class="filter-button" type="submit">Показать</button>
-</div>
-</div>
-
-
-
-<div class="catalog-list-2">
-    <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_13.png" width="360" height="576" alt="Макет Седона"></a>
-
+        <div class="catalog-list-2">
+          <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_13.jpg" width="360" height="576" alt="Макет Седона"></a>
             <h2 class="catalog-title">Седона</h2>
-
-    </div>
-
-
-    <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_14.png" width="360" height="576" alt="Макет Пинк"></a>
-
+          </div>
+          <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_14.jpg" width="360" height="576" alt="Макет Пинк"></a>
             <h2 class="catalog-title">Pink app</h2>
-
-    </div>
-
-
-    <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_15.png" width="360" height="576" alt="Макет Барбершоп"></a>
-
+          </div>
+          <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_15.jpg" width="360" height="576" alt="Макет Барбершоп"></a>
             <h2 class="catalog-title">Barbershop</h2>
-
-    </div>
-
-
-    <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_16.png" width="360" height="576" alt="Макет Мишка"></a>
-
+          </div>
+          <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_16.jpg" width="360" height="576" alt="Макет Мишка"></a>
             <h2 class="catalog-title">Mishka</h2>
-
-    </div>
-
-    <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_17.png" width="360" height="576" alt="Макет Школа"></a>
-
+          </div>
+          <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_17.jpg" width="360" height="576" alt="Макет Школа"></a>
             <h2 class="catalog-title">A Plus</h2>
-
-    </div>
-
-
-    <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_18.png" width="360" height="576" alt="Макет Квас"></a>
-
+          </div>
+          <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_18.jpg" width="360" height="576" alt="Макет Квас"></a>
             <h2 class="catalog-title">Кваст</h2>
 
-    </div>
-</div>
-</section>
-</main>
-
-<div class="map-conteiner">
-  <div class="address">
-    <div class="address-map">
-     <div class="address-container">
-       <h1 class="address-title">NЁRDS DESIGN STUDIO</h1>
-       <p class="address-text">91186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-       <p class="address-phone">тел. +7 (812) 275-75-75</p>
-       <a href="#" class="button button-address">Напишите нам</a>
-     </div>
-    </div>
-   </div>
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c80899cb7b8347d15ee8a216ebab2d39b49b4b6a5180ef7fcefa1043848b563&amp;width=100%25&amp;height=418&amp;lang=ru_RU&amp;scroll=true"></script>
-</div>
-
-<footer class="main-footer">
-        <div class="footer-contacts">
-                     <a href="#" class="footer-item footer-item-vk">Вконтакте</a>
-                     <a href="#" class="footer-item footer-item-fb">Фейсбук</a>
-                     <a href="#" class="footer-item footer-item-ig">Инстаграмм</a>
+          </div>
+          <div class="paginator">
+            <a href="" class="paginator-link paginator-current">1</a>
+            <a href="#" class="paginator-link">2</a>
+            <a href="#" class="paginator-link">3</a>
+            <a href="#" class="paginator-link paginator--next">Следующая</a>
+          </div>
         </div>
-        <div class="footer-text">
-                     <p class="footer-text-slog">Давайте дружить, это выгодно!</p>
-                     <p class="footer-text-off">Скидка 10% для друзей из социальных сетей</p>
-        </div>
-</footer>
+      </div>
 
-<div class="modal">
+  </main>
+
+  <div class="map-conteiner">
+    <div class="address">
+      <div class="address-map">
+        <div class="address-container">
+          <h1 class="address-title">NЁRDS DESIGN STUDIO</h1>
+          <p class="address-text">91186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="address-phone">тел. +7 (812) 275-75-75</p>
+          <a href="#" class="button button-address">Напишите нам</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c80899cb7b8347d15ee8a216ebab2d39b49b4b6a5180ef7fcefa1043848b563&amp;width=100%25&amp;height=418&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+
+  <footer class="main-footer">
+    <div class="footer-contacts">
+      <a href="#" class="footer-item footer-item-vk">Вконтакте</a>
+      <a href="#" class="footer-item footer-item-fb">Фейсбук</a>
+      <a href="#" class="footer-item footer-item-ig">Инстаграмм</a>
+    </div>
+    <div class="footer-text">
+      <p class="footer-text-slog">Давайте дружить, это выгодно!</p>
+      <p class="footer-text-off">Скидка 10% для друзей из социальных сетей</p>
+    </div>
+  </footer>
+
+  <div class="modal">
 
     <div class="modal-wrp">
 
-        <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button">Закрыть</button>
 
-        <span class="modal-title">Напишите нам!</span>
+      <span class="modal-title">Напишите нам!</span>
 
-        <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
+      <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
 
-         <label class="modal-text" for="name">Ваше имя:
-         <input class="modal-input modal-input-name" id="name" type="text" autofocus name="name" placeholder="Имя Фамилия">
-         </label>
-         <label class="modal-text" for="email">Ваш e-mail:
-         <input class="modal-input modal-input-mail" id="email" type="email" name="email" placeholder="email@yandex.ru">
-         </label>
-         <p class="modal-text modal-text-comment">Текст письма
-         <textarea class="modal-comment" id="comment-field"  name="comment" rows="4" placeholder="В свободной форме"></textarea></p>
-
-
-         <button class="btn" type="submit">Отправить</button>
-        </form>
-     </div>
-</div>
-  
+        <label class="modal-text" for="name">Ваше имя:
+          <input class="modal-input modal-input-name" id="name" type="text" autofocus name="name" placeholder="Имя Фамилия">
+        </label>
+        <label class="modal-text" for="email">Ваш e-mail:
+          <input class="modal-input modal-input-mail" id="email" type="email" name="email" placeholder="email@yandex.ru">
+        </label>
+        <p class="modal-text modal-text-comment">Текст письма
+          <textarea class="modal-comment" id="comment-field" name="comment" rows="4" placeholder="В свободной форме"></textarea></p>
 
 
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
 
-<script>
-  var link = document.querySelector(".button-address");
 
-  var popup = document.querySelector(".modal");
-  var close = popup.querySelector(".modal-close");
-  var form = popup.querySelector("form");
 
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
+
+  <script>
+    var link = document.querySelector(".button-address");
+
+    var popup = document.querySelector(".modal");
+    var close = popup.querySelector(".modal-close");
+    var form = popup.querySelector("form");
+
+    link.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
 
 
     });
-    close.addEventListener("click", function (evt) {
-evt.preventDefault();
-popup.classList.remove("modal-show");
-});
-form.addEventListener("submit", function (evt) {
-evt.preventDefault();
-});
-if (isStorageSupport) {
-    localStorage.setItem("login", login.value);
-  }
-</script>
+    close.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+    });
+    form.addEventListener("submit", function(evt) {
+      evt.preventDefault();
+    });
+    if (isStorageSupport) {
+      localStorage.setItem("login", login.value);
+    }
+  </script>
 </body>
+
 </html>
