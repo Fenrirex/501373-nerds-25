@@ -81,11 +81,12 @@ body {
   height: 15px;
   bottom: 7px;
   left: 0;
+  background: url(../img/Slice_7.png);
 }
 
 /*Красные блоки*/
 .main__description {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 80px;
   border-bottom: 2px solid #eee;
   display: flex;
@@ -109,6 +110,8 @@ body {
 
 .main__text-slogan {
   line-height: 24px;
+  margin-top: 45px;
+  margin-bottom: 13px;
 }
 
 .main__text h3 {
@@ -162,7 +165,7 @@ body {
   align-items: center;
   padding: 40px 30px 48px 30px;
   border-bottom: 2px solid #eee;
-  margin-bottom: 80px;
+  margin-bottom: 82px;
 }
 
 .main__client {
@@ -171,8 +174,8 @@ body {
 
 /*Меню 2ой страницы*/
 .page-title {
-  padding-top: 80px;
-  padding-bottom: 115px;
+  padding-top: 90px;
+  padding-bottom: 120px;
   text-align: center;
   background-color: #eee;
   margin: 0;
@@ -186,6 +189,11 @@ body {
 .filter-title--price {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
 }
 
 .filter-title {
@@ -194,7 +202,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   font-weight: 600;
-  padding-bottom: 30px;
+  padding: 0px;
 }
 
 .filter-range {
@@ -283,6 +291,7 @@ body {
   display: flex;
   margin-top: 20px;
 }
+
 /*Фильтр выбора*/
 .filter-grid, .filter-features {
   margin-bottom: 57px;
@@ -299,15 +308,6 @@ body {
 .filter-menu {
   display: flex;
   width: 1160px;
-}
-
-.filter-title {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 600;
-  padding-bottom: 30px;
 }
 
 .filters {
@@ -568,7 +568,7 @@ input[type=checkbox]:checked+label::before {
 }
 
 .slider-text {
-  padding-top: 80px;
+  padding-top: 84px;
   padding-bottom: 78px;
   width: 515px;
 }
@@ -713,11 +713,10 @@ input[type=checkbox]:checked+label::before {
 }
 
 .catalog-list {
-  margin-top: 82px;
-  padding-bottom: 80px;
+  margin-top: 80px;
   border-bottom: 2px solid #eee;
   list-style: none;
-  padding: 0 0 65px 0;
+  padding: 0 0 84px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -727,9 +726,29 @@ input[type=checkbox]:checked+label::before {
   padding: 0 50px 0 0;
 }
 
+.catalog-item p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
 .catalog-item h3 {
+  margin-top: 30px;
   text-transform: uppercase;
 }
+.catalog__hover {
+    position: absolute;
+    height: 235px;
+    width: 100%;
+    background-color: #eee;
+    box-sizing: border-box;
+    margin-top: 350px;
+    z-index: 10;
+    bottom: 0;
+    display: none;
+}
+
+
+
 
 /*Кнопка для модального окна*/
 .address {
@@ -743,6 +762,7 @@ input[type=checkbox]:checked+label::before {
   left: 0;
   bottom: 0;
   margin-bottom: 110px;
+  margin-left: 238px;
 }
 
 .address-title {
@@ -914,7 +934,7 @@ input[type=checkbox]:checked+label::before {
 /*Подвал*/
 .main-footer {
   display: flex;
-  width: 1000px;
+  width: 1160px;
   margin: 0 auto;
   padding-bottom: 70px;
 }
