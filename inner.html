@@ -14,8 +14,10 @@
   <header class="header">
     <div class="container">
       <div class="menu">
-        <div class="menu-logo">
-          <img src="img/Slice_1.png" width="160" height="65" alt="Логотип">
+        <div class="menu-logo">          
+          <a href="index.html">
+		    <img src="img/Slice_1.png" width="160" height="65" alt="Логотип">
+		  </a>
         </div>
         <nav class="menu-nav">
           <ul class="menu-list">
@@ -111,9 +113,22 @@
           </div>
         </div>
         <div class="catalog-list-2">
-          <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_13.jpg" width="360" height="576" alt="Макет Седона"></a>
+          <div class="catalog-item-2">
+		  
+		    <div class="circle-header">
+                    <ul>
+                        <li><div class="circle"></div></li>
+                        <li><div class="circle"></div></li>
+                        <li><div class="circle"></div></li>
+                    </ul>
+                </div>
+		    <a class="catalog-item-link" href="#"><img src="img/Slice_13.jpg" width="360" height="576" alt="Макет Седона"></a>
             <h2 class="catalog-title">Седона</h2>
-
+			<div class="price">
+                     <h3 class="text-uppercase">Sedona</h3>
+                     <p>Информационный сайт для туристов, c достопримечательностями</p>
+                     <a class="btn btn-primary" href="#">9900 руб.</a>
+                </div>
           </div>
           <div class="catalog-item-2"><a class="catalog-item-link" href="#"><img src="img/Slice_14.jpg" width="360" height="576" alt="Макет Пинк"></a>
             <h2 class="catalog-title">Pink app</h2>
@@ -193,34 +208,7 @@
       </form>
     </div>
   </div>
-
-
-
-
-  <script>
-    var link = document.querySelector(".button-address");
-
-    var popup = document.querySelector(".modal");
-    var close = popup.querySelector(".modal-close");
-    var form = popup.querySelector("form");
-
-    link.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-
-
-    });
-    close.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-    });
-    form.addEventListener("submit", function(evt) {
-      evt.preventDefault();
-    });
-    if (isStorageSupport) {
-      localStorage.setItem("login", login.value);
-    }
-  </script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

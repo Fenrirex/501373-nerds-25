@@ -5,6 +5,11 @@ body {
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
+  min-width: 1160px;
+}
+
+p, h3 {
+  margin: 0;
 }
 
 /*Шапка*/
@@ -41,7 +46,7 @@ body {
 .menu-item {
   display: inline-block;
   position: relative;
-  margin-right: 50px;
+  margin-right: 42px;
 }
 
 .menu-item a, .menu-user a {
@@ -86,8 +91,10 @@ body {
 
 /*Красные блоки*/
 .main__description {
-  padding-top: 25px;
-  padding-bottom: 80px;
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 33px;
   border-bottom: 2px solid #eee;
   display: flex;
   justify-content: space-between;
@@ -100,18 +107,17 @@ body {
 }
 
 .main__text-title {
-  padding: 0;
-  padding-top: 45px;
+  padding: 34px 0 0 0;
   margin: 0;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .main__text-slogan {
   line-height: 24px;
-  margin-top: 45px;
-  margin-bottom: 13px;
+  margin-top: 33px;
+  margin-bottom: 19px;
 }
 
 .main__text h3 {
@@ -125,16 +131,17 @@ body {
 
 .main__text-list {
   list-style: none;
+  margin-top: 9px;
 }
 
 .main__text-list li {
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   position: relative;
 }
 
 .main__text-list li::before {
   content: "";
-  top: 12px;
+  top: 11px;
   left: -35px;
   position: absolute;
   width: 25px;
@@ -152,24 +159,50 @@ body {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 25px;
+  margin-top: 29px;
+}
+
+.main__logo {
+  padding-left: 10px;
 }
 
 .main__table {
-  margin-top: 40px;
+  margin-top: 49px;
+}
+
+.main__table th {
+  font-size: 44px;
+}
+
+.main__table td {
+  padding: 26px 0;
+  line-height: 18px;
 }
 
 .main__clients {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 30px 48px 30px;
+  padding: 40px 0 43px 0;
   border-bottom: 2px solid #eee;
-  margin-bottom: 82px;
+  margin: 0 auto 82px;
+  width: 1160px;
 }
 
 .main__client {
   opacity: 0.24;
+  width: 290px;  
+  text-align: center;
+}
+
+/* поведение при наведении курсора */
+.main__client:hover {	
+  opacity: 1;
+}
+
+.main__client.main__client--academy img {
+	width: 200px;
+	height: 75px;
 }
 
 /*Меню 2ой страницы*/
@@ -421,6 +454,45 @@ input[type=checkbox]:checked+label::before {
   margin-right: 40px;
   margin-bottom: 80px;
   position: relative;
+  background-color: #eee;
+}
+
+.catalog-item-2:hover {
+    background-color: #4d4d4d;
+}
+
+.catalog-item-2:hover .price {
+  opacity: 1;
+}
+.circle-header ul {
+    list-style: none;
+    margin: 12px 0 0 10px;
+    padding: 0;
+}
+.circle-header ul li {
+    display: inline-block;
+    margin: 0;
+    padding-left: 10px;
+}
+.circle-header .circle {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.catalog-item-2 .price {
+  display: block;
+  background-color: #eee;
+  z-index: 3;
+  padding: 19px 38px 41px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.3s linear;
+  opacity: 0;
 }
 
 .catalog-title {
@@ -568,7 +640,7 @@ input[type=checkbox]:checked+label::before {
 }
 
 .slider-text {
-  padding-top: 84px;
+  padding-top: 70px;
   padding-bottom: 78px;
   width: 515px;
 }
@@ -586,19 +658,19 @@ input[type=checkbox]:checked+label::before {
 .slider-item:nth-child(1) {
   background-image: url("../img/Slice_24.jpg");
   background-repeat: no-repeat;
-  background-position: 100% 28px;
+  background-position: 99% -8px;
 }
 
 .slider-item:nth-child(2) {
   background-image: url("../img/Slice_25.jpg");
   background-repeat: no-repeat;
-  background-position: 100% 28px;
+  background-position: 99% -8px;
 }
 
 .slider-item:nth-child(3) {
   background-image: url("../img/Slice_26.jpg");
   background-repeat: no-repeat;
-  background-position: 100% 28px;
+  background-position: 99% -8px;
 }
 
 .slider-item {
@@ -623,7 +695,7 @@ input[type=checkbox]:checked+label::before {
   line-height: 55px;
   font-weight: 500;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
   margin: 0;
 }
 
@@ -637,19 +709,17 @@ input[type=checkbox]:checked+label::before {
   display: block;
   box-sizing: border-box;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 50px;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  padding-top: 17px;
-  padding-bottom: 17px;
   text-align: center;
   border-radius: 5px;
 }
 
 .button-slider {
   width: 240px;
-  margin-top: 45px;
+  margin-top: 40px;
 }
 
 .btn-hover {
@@ -722,17 +792,17 @@ input[type=checkbox]:checked+label::before {
 }
 
 .catalog-item {
-  width: 300px;
-  padding: 0 50px 0 0;
+  width: 360px;
 }
 
 .catalog-item p {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 18px;
+  margin-bottom: 33px;
 }
 
 .catalog-item h3 {
-  margin-top: 30px;
+  font-size: 24px;
+  margin-top: 23px;
   text-transform: uppercase;
 }
 .catalog__hover {
@@ -753,11 +823,10 @@ input[type=checkbox]:checked+label::before {
 /*Кнопка для модального окна*/
 .address {
   position: absolute;
-  width: 100%;
   height: 418px;
   z-index: 20;
   background-size: cover;
-  top: 60px;
+  top: 50px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -766,7 +835,7 @@ input[type=checkbox]:checked+label::before {
 }
 
 .address-title {
-  padding: 0;
+  padding: 11px 0 0;
   margin: 0;
   font-size: 18px;
   line-height: 30px;
@@ -776,10 +845,10 @@ input[type=checkbox]:checked+label::before {
 .address-container {
   box-sizing: border-box;
   position: absolute;
-  left: 140px;
+  left: 134px;
   display: block;
   background-color: #fff;
-  width: 320px;
+  width: 318px;
   height: 310px;
   z-index: 30;
   padding: 40px 50px;
@@ -789,17 +858,20 @@ input[type=checkbox]:checked+label::before {
   display: block;
   color: #666;
   width: 202px;
+  padding-top: 21px;
+  line-height: 20px;
 }
 
 .address-phone {
   color: #666;
-  padding-top: 5px;
+  padding-top: 13px;
   padding-bottom: 20px;
 }
 
 .button-address {
   background-color: #fb565a;
   width: 220px;
+  margin-top: 14px;
 }
 
 /*Модальное окно*/
@@ -813,9 +885,10 @@ input[type=checkbox]:checked+label::before {
 
 .modal-wrp {
   padding-top: 70px;
-  padding-bottom: 84px;
+  padding-bottom: 75px;
   padding-left: 100px;
-  padding-right: 100px;
+  padding-right: 100px;  
+  height: 445px;
 }
 
 .modal-login {
@@ -912,6 +985,7 @@ input[type=checkbox]:checked+label::before {
 }
 
 .btn {
+  cursor: pointer;
   position: absolute;
   bottom: 75px;
   background-color: #fb565a;
@@ -931,6 +1005,11 @@ input[type=checkbox]:checked+label::before {
   opacity: .1;
 }
 
+.shake {	
+  -webkit-animation: shake .5s;
+  animation: shake .5s;
+}
+
 /*Подвал*/
 .main-footer {
   display: flex;
@@ -944,7 +1023,7 @@ input[type=checkbox]:checked+label::before {
   justify-content: space-between;
   width: 260px;
   margin-right: 140px;
-  padding: 70px 0 0 0;
+  padding: 65px 0 0 0;
 }
 
 .footer-item {
@@ -997,6 +1076,7 @@ input[type=checkbox]:checked+label::before {
   font-size: 16px;
   line-height: 22px;
   color: #444;
+  padding-top: 11px;
 }
 
 /*Разное*/
@@ -1027,5 +1107,24 @@ input[type=checkbox]:checked+label::before {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+/*Анимация*/
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
   }
 }
