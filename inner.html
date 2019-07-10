@@ -44,7 +44,7 @@
       <div class="filter-conteiner">
         <h2 class="visually-hidden">Фильтр товаров</h2>
 
-        <form action="form.php" method="GET" class="filter">
+        <form class="fil" action="form.php" method="GET" class="filter">
           <span class="filter-title--price">Стоимость:</span>
           <div class="filter-range">
             <div class="filter-scale">
@@ -60,16 +60,16 @@
           <div class="filter-grid">
             <span class="filter-title">Сетка</span>
             <div class="filter-left">
-              <input type="radio" class="filter-radio" name="grid" id="adaptive" value="adaptive">
+              <input type="radio" class="filter-radio" name="grid" id="adaptive" value="adaptive" checked>
               <label class="filter-label filter-label-radio" for="adaptive">Адаптивная</label>
             </div>
             <div class="filter-left-1">
-              <input type="radio" class="filter-radio" name="grid" id="fluid" value="fluid" checked>
-              <label class="filter-label filter-label-radio" for="fluid">Резиновая</label>
+              <input type="radio" class="filter-radio" name="grid" id="fluid" value="fluid">
+              <label class="filter-label filter-label-radio" for="fluid">Фиксированная</label>
             </div>
             <div class="filter-left-2">
               <input type="radio" class="filter-radio" name="grid" id="fix" value="fix">
-              <label class="filter-label filter-label-radio" for="fix">Фиксированная</label>
+              <label class="filter-label filter-label-radio" for="fix">Резиновая</label>
             </div>
           </div>
 
@@ -79,19 +79,19 @@
               <input type="checkbox" class="filter-check" name="slider" id="slider" checked>
               <label class="filter-label filter-label-check" for="slider">Слайдер</label>
             </div>
-            <div class="filter-left">
+            <div class="filter-left-3">
               <input type="checkbox" class="filter-check" name="advantage" id="advantage">
               <label class="filter-label filter-label-check" for="advantage">Блок преимуществ</label>
             </div>
-            <div class="filter-left">
+            <div class="filter-left-4">
               <input type="checkbox" class="filter-check" name="news" id="news" checked>
               <label class="filter-label filter-label-check" for="news">Новости</label>
             </div>
-            <div class="filter-left">
+            <div class="filter-left-5">
               <input type="checkbox" class="filter-check" name="gallery" id="gallery">
               <label class="filter-label filter-label-check" for="gallery">Галерея</label>
             </div>
-            <div class="filter-left">
+            <div class="filter-left-6">
               <input type="checkbox" class="filter-check" name="basket" id="basket">
               <label class="filter-label filter-label-check" for="basket">Корзина</label>
             </div>
@@ -104,8 +104,8 @@
           <span class="catalog-sort-title">Сортировать:</span>
           <ul class="catalog-sort">
             <li class="catalog-sort-item catalog-sort-item--active"><a href="">По цене</a></li>
-            <li class="catalog-sort-item"><a href="#">По типу</a></li>
-            <li class="catalog-sort-item"><a href="#">По названию</a></li>
+            <li class="catalog-sort-item-1"><a href="#">По типу</a></li>
+            <li class="catalog-sort-item-2"><a href="#">По названию</a></li>
           </ul>
           <div class="catalog-toggle-list">
             <div class="catalog-toggle catalog-toggle--down"></div>

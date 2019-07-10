@@ -21,7 +21,7 @@ p, h3 {
 .header {
   background-color: #eee;
   text-transform: uppercase;
-  padding-top: 50px;
+  padding-top: 75px;
 }
 
 .menu {
@@ -214,7 +214,7 @@ p, h3 {
   margin: 0;
   line-height: 55px;
   font-size: 55px;
-  font-weight: 500;
+  
 }
 
 /* Фильтр 2ой страницы*/
@@ -224,7 +224,7 @@ p, h3 {
   padding-bottom: 48px;
   display: inline-block;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 30px;
   font-weight: 600;
 }
@@ -320,7 +320,7 @@ p, h3 {
 
 .filter-conteiner {
   width: 238px;
-  margin-right: 120px;
+  margin-right: 257px;
 }
 
 .filter-left {
@@ -329,16 +329,32 @@ p, h3 {
 }
 .filter-left-1 {
   display: flex;
-  margin-top: 15px;
+  margin-top: 22px;
 }
 .filter-left-2 {
   display: flex;
-  margin-top: 15px;
+  margin-top: 20px;
+}
+.filter-left-3 {
+  display: flex;
+  margin-top: 20px;
+}
+.filter-left-4 {
+  display: flex;
+  margin-top: 20px;
+}
+.filter-left-5 {
+  display: flex;
+  margin-top: 20px;
+}
+.filter-left-6 {
+  display: flex;
+  margin-top: 20px;
 }
 
 /*Фильтр выбора*/
 .filter-grid, .filter-features {
-  margin-bottom: 57px;
+  margin-bottom: 44px;
 }
 
 .filter-radio, .filter-check {
@@ -357,14 +373,17 @@ p, h3 {
 .filters {
   display: flex;
   flex-wrap: wrap;
-  width: 1160px;
+  width: 1350px;
   margin: 0 auto;
+}
+.fil {
+	margin-left: 96px;
 }
 
 .filter-label {
   position: relative;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 18px;
   display: block;
   cursor: pointer;
   color: #283136;
@@ -439,7 +458,7 @@ input[type=checkbox]:checked+label::before {
   cursor: pointer;
   border-radius: 5%;
   border-radius: 5px;
-  margin-top: 35px;
+  margin-top: 51px;
 }
 
 .filter-button:hover, .paginator-link:hover {
@@ -458,7 +477,7 @@ input[type=checkbox]:checked+label::before {
   flex-wrap: wrap;
   width: 800px;
   box-sizing: border-box;
-  margin-top: 65px;
+  margin-top: 54px;
 }
 
 .catalog-item-2 {
@@ -477,7 +496,7 @@ input[type=checkbox]:checked+label::before {
 }
 .circle-header ul {
     list-style: none;
-    margin: 12px 0 0 10px;
+    margin: 13px 0 0 1px;
     padding: 0;
 }
 .circle-header ul li {
@@ -512,8 +531,8 @@ input[type=checkbox]:checked+label::before {
 }
 
 .catalog-filter {
-  margin-top: 60px;
-  margin-bottom: 90px;
+  margin-top: 56px;
+  margin-bottom: 50px;
 }
 
 .catalog-sort {
@@ -530,15 +549,30 @@ input[type=checkbox]:checked+label::before {
   font-size: 18px;
   line-height: 18px;
   font-weight: 600;
-  margin-right: 240px;
+  margin-right: 221px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .catalog-sort-item {
   display: inline-block;
   font-size: 14px;
   line-height: 18px;
-  margin-left: 27px;
+  margin-left: 40px;
 }
+.catalog-sort-item-1 {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 23px;
+}
+.catalog-sort-item-2 {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+margin-left: 22px;
+}
+  
 
 .catalog-sort-item--active a {
   color: #000;
